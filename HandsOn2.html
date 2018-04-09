@@ -1,5 +1,25 @@
-Using GitKraken, create a new repo on your computer. Then create a new project on GitHub but do not initialize it.
-Add a new remote named origin to your repository using the SSH URL for the repo provided by GitHub. 
-Make a commit to your local repo.
-Push the changes and the master branch to origin.
-Confirm you can see the commit on GitHub.
+*Using GitKraken, create a new repo on your computer. 
+mkdir newrepo (creates folder)
+cd newrepo
+git init
+
+*Then create a new project on GitHub but do not initialize it.
+start a new project
+create a repo name (newrepo) leave public, don't initialize it.
+
+*Add a new remote named origin to your repository using the SSH URL for the repo provided by GitHub. 
+>git remote add origin https://github.com/gitpep/newrepo.git
+
+*Make a commit to your local repo.
+Create new file in Visual Studio called: README.txt with information in it.
+From cmd line: git status
+From cmd line: git add README.txt
+From cmd line: git status (should be green)
+From cmd line: git commit -m "This is my first commit"
+
+
+*Push the changes and the master branch to origin
+From cmd line: git push -u origin master
+
+*Confirm you can see the commit on GitHub.
+From the brower go to github.com and look in newrepo repository for README.txt
